@@ -36,6 +36,7 @@ const NavStyles = styled.nav`
     }
   }
   a {
+    display: block;
     font-size: 3rem;
     text-decoration: none;
     &:hover {
