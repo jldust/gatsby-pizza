@@ -46,13 +46,13 @@ export default function useLatestData() {
     })
       .then((res) => res.json())
       .then((res) => {
-        // TODO: Validate for errors
         // Set data
         setHotSlices(res.data.StoreSettings.hotSlices);
         setSlicemasters(res.data.StoreSettings.slicemaster);
       })
       .catch((err) => {
         console.log(err);
+        console.log('There was an error validating the store.');
       });
   }, []);
   return {
